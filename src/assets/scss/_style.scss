@@ -1,0 +1,91 @@
+// @import "normalize";
+button {
+    cursor: pointer;
+}
+
+.wrapper {
+    max-width: 1440px;
+}
+
+.header {
+    background-color: $bg-color;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header__container {
+    @include flex;
+    height: 134px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $bg-color;
+
+   
+} 
+
+.header__menu{
+
+    &-list{
+        @include flex;
+        list-style-type: none;
+     }    
+
+    &-item {
+        a { 
+            margin-left: 46px;
+            text-decoration: none;
+            font-family: $font-headers;
+            font-size: 16px;
+            line-height: 50px;
+            color: $link-color;
+        }
+        
+    }
+
+   
+}
+
+.header__main {
+    @include flex;
+    height: 532px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $bg-color;
+    
+    &-block{
+        width: 549px;
+        font-family: $font-stack;
+        h1 {
+            font-weight: 700;
+            font-size: 45px;
+            line-height: 50px;
+            color: $heading-color;
+            margin-bottom: 42px;
+
+            span{
+                color: $green-color;
+            }
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 35px;
+            color: $text-color;
+            margin-bottom: 48px;
+        }
+
+        button {
+            font-size: 16px;
+            line-height: 20px;
+            padding: 10px 27px;
+            color: black;
+            border: solid 2.5px $orange-color;
+            border-radius: 10px;
+        }
+    }
+
+}
