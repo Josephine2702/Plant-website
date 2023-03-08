@@ -2,3 +2,10 @@
     display: flex;
     flex-direction: row;
 }
+
+@mixin btn-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    cursor: pointer;  
+}
