@@ -1,6 +1,6 @@
-// @import "normalize";
-button {
-    cursor: pointer;
+
+p {
+    color: $text-color;
 }
 
 .wrapper {
@@ -74,14 +74,15 @@ button {
             font-weight: 400;
             font-size: 20px;
             line-height: 35px;
-            color: $text-color;
             margin-bottom: 48px;
         }
 
-        button {
+        .header__btn {
+            @include btn-link;
+            width: 158px;
+            height: 44px;
             font-size: 16px;
             line-height: 20px;
-            padding: 10px 27px;
             color: black;
             border: solid 2.5px $orange-color;
             border-radius: 10px;
@@ -89,3 +90,201 @@ button {
     }
 
 }
+
+.about__container {
+    @include flex;
+    height: 666px;
+    justify-content: space-between;
+    align-items: center;
+
+        .about__block {
+            width: 605px;
+            font-family: $font-headers;
+           
+            h2 {
+                width: 463px;
+                color: $green-color;
+                font-size: 40px;
+                line-height: 52px;
+                font-weight: 400;
+                }
+
+            span {
+                color: $orange-color;
+            }
+
+            p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+
+}
+
+.service {
+    height: 1300px;
+    background-color: $bg-color;
+}
+
+.service__container{
+    background-color: $bg-color;
+}
+.service__header {
+    @include flex;
+    font-family: $font-headers;
+    margin-bottom: 40px;
+    
+    
+
+    &-title {
+        width: 340px;
+        color: $green-color;
+        font-size: 40px;
+        line-height: 52px;
+
+        h3{
+           font-weight: 400; 
+        }
+    }
+}
+.service__header-tabs {
+    @include flex;
+    flex-basis: 2;
+    margin-left: 115px;
+
+
+        .header-tab {
+            @include btn-link;
+            align-self: center;
+            width: 161px;
+            height: 50px;
+            border: 1px solid $orange-color;
+            border-radius: 5px;
+            margin-right: 38px;
+            
+
+            p{
+                text-align: center;
+                margin: 0;
+                font-size: 20px;
+                line-height: 26px;
+                color: $orange-color;
+
+            }
+        }
+    }
+
+    .service__gallery{
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+        column-gap: 110px;
+        row-gap: 55px;
+
+       
+
+        .item-block{
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            align-content: space-around;
+            width: 328px;
+            height: 100px;
+            margin-top: -4px;
+            border: 1px solid #E3E1D5;
+            border-radius: 0px 0px 20px 20px;
+            font-family: $font-stack;
+
+            h4{
+               
+                font-weight: 700;
+                color: $orange-color;
+                margin: 10px 0;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                margin: 0;
+                color: $heading-color;
+            }
+            
+        }
+    }
+
+    .price__container{
+        height: 560px;
+    }
+
+    .price__title {
+        @include flex;
+        justify-content: space-between;
+        font-family: $font-stack;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        color: black;
+        margin-top: 40px;
+
+        &-right {
+            width: 452px;
+
+            span{
+                color: $green-color;
+            }
+        }
+    }
+
+    .price__block {
+        @include flex;
+        justify-content: space-between;
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 332px;
+            height: 282px;
+            border: 1px solid #E3E1D5;
+            border-radius: 20px;
+        }
+
+        .block-item{
+            @include flex;
+            justify-content: space-around;
+            align-items: center;
+            align-content: space-around;
+            width: 250px;
+            height: 50px;
+            margin-top: 32px;
+            background-color: #EDF2EC;
+            font-family: $font-stack;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 20px;
+            color: black;
+            border-radius: 20px;
+
+
+        }
+
+       }
+
+    .price__contact {
+        margin-top: 38px;
+       
+       &-btn {
+            @include btn-link;
+            font-family: $font-headers;
+            width: 162px;
+            height: 50px;
+            font-size: 20px;
+            line-height: 26px;
+            color: $orange-color;
+            border: solid 1px $orange-color;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            }
+
+       
+    }

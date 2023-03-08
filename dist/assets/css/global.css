@@ -359,8 +359,8 @@ template {
   font-style: normal;
 }
 
-button {
-    cursor: pointer;
+p {
+    color: #636060;
 }
 
 .wrapper {
@@ -430,15 +430,217 @@ button {
     font-weight: 400;
     font-size: 20px;
     line-height: 35px;
-    color: #636060;
     margin-bottom: 48px;
 }
 
-.header__main-block button {
+.header__main-block .header__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 158px;
+    height: 44px;
     font-size: 16px;
     line-height: 20px;
-    padding: 10px 27px;
     color: black;
     border: solid 2.5px #E06733;
     border-radius: 10px;
+}
+
+.about__container {
+    display: flex;
+    flex-direction: row;
+    height: 666px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about__container .about__block {
+    width: 605px;
+    font-family: "Inika";
+}
+
+.about__container .about__block h2 {
+    width: 463px;
+    color: #499A18;
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 400;
+}
+
+.about__container .about__block span {
+    color: #E06733;
+}
+
+.about__container .about__block p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.service {
+    height: 1300px;
+    background-color: #EDF2EC;
+}
+
+.service__container {
+    background-color: #EDF2EC;
+}
+
+.service__header {
+    display: flex;
+    flex-direction: row;
+    font-family: "Inika";
+    margin-bottom: 40px;
+}
+
+.service__header-title {
+    width: 340px;
+    color: #499A18;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.service__header-title h3 {
+    font-weight: 400;
+}
+
+.service__header-tabs {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 2;
+    margin-left: 115px;
+}
+
+.service__header-tabs .header-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    align-self: center;
+    width: 161px;
+    height: 50px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    margin-right: 38px;
+}
+
+.service__header-tabs .header-tab p {
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    line-height: 26px;
+    color: #E06733;
+}
+
+.service__gallery {
+    display: grid;
+    grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+    -moz-column-gap: 110px;
+    column-gap: 110px;
+    row-gap: 55px;
+}
+
+.service__gallery .item-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    width: 328px;
+    height: 100px;
+    margin-top: -4px;
+    border: 1px solid #E3E1D5;
+    border-radius: 0px 0px 20px 20px;
+    font-family: "Inter";
+}
+
+.service__gallery .item-block h4 {
+    font-weight: 700;
+    color: #E06733;
+    margin: 10px 0;
+}
+
+.service__gallery .item-block p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    color: #717171;
+}
+
+.price__container {
+    height: 560px;
+}
+
+.price__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: black;
+    margin-top: 40px;
+}
+
+.price__title-right {
+    width: 452px;
+}
+
+.price__title-right span {
+    color: #499A18;
+}
+
+.price__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.price__block-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 332px;
+    height: 282px;
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+}
+
+.price__block .block-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    width: 250px;
+    height: 50px;
+    margin-top: 32px;
+    background-color: #EDF2EC;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: black;
+    border-radius: 20px;
+}
+
+.price__contact {
+    margin-top: 38px;
+}
+
+.price__contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: "Inika";
+    width: 162px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 26px;
+    color: #E06733;
+    border: solid 1px #E06733;
+    border-radius: 5px;
+    margin-bottom: 30px;
 }
