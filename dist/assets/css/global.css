@@ -359,8 +359,16 @@ template {
   font-style: normal;
 }
 
+.active_link {
+    color: #E06733 !important;
+}
+
 p {
     color: #636060;
+}
+
+.acc {
+    cursor: pointer;
 }
 
 .wrapper {
@@ -391,8 +399,11 @@ p {
     list-style-type: none;
 }
 
-.header__menu-item a {
+.header__menu-item {
     margin-left: 46px;
+}
+
+.header__menu-item a {
     text-decoration: none;
     font-family: "Inika";
     font-size: 16px;
@@ -625,6 +636,10 @@ p {
     border-radius: 20px;
 }
 
+.price__block .block-item img {
+    padding-top: 4px;
+}
+
 .price__contact {
     margin-top: 38px;
 }
@@ -643,4 +658,84 @@ p {
     border: solid 1px #E06733;
     border-radius: 5px;
     margin-bottom: 30px;
+}
+
+.contact {
+    height: 550px;
+    background-color: #EDF2EC;
+}
+
+.contact__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Inika";
+    color: #499A18;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.contact__img img {
+    margin-top: 52px;
+}
+
+.contact__city {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    height: 50px;
+    background-color: #D6E7D2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Inter";
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #717171;
+    margin-top: 148px;
+}
+
+.contact__city-name {
+    padding-left: 20px;
+}
+
+.contact__city img {
+    margin-right: 35px;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: row;
+    height: 130px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__container p {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    color: black;
+}
+
+.footer-year {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-year p {
+    margin-right: 20px;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.footer-social img {
+    height: 26px;
 }

@@ -15,6 +15,7 @@ const cssnano = require("gulp-cssnano");
 const uglify = require("gulp-uglify");
 const plumber = require("gulp-plumber");
 const panini = require("panini");
+const rigger = require("gulp-rigger");
 const imagemin = require("gulp-imagemin");
 const del = require("del");
 const notify = require("gulp-notify")
@@ -112,6 +113,7 @@ function js(){
         this.emit('end');
       }
     }))
+    .pipe(rigger())
     .pipe(dest(path.build.js))
     .pipe(uglify())
     .pipe(rename({
@@ -171,6 +173,6 @@ exports.build = build
 exports.watch = watch
 exports.default = watch
 
-//////////////////////////////////////////////////////
+
 
 
